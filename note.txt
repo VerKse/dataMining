@@ -37,3 +37,14 @@ learning_rate = сокращает вклад каждого классифик�
 12. VotingClassifier -- модуль использования сразу нескольких, не похожих между собой, моделей машинного обучения и их объединения в один классификатор
 voting = «hard», использует прогнозируемые метки классов для голосования по правилу большинства. «soft», прогнозирует метку класса на основе argmax сумм прогнозируемых вероятностей
 
+____________
+* avarage
+This parameter is required for multiclass/multilabel targets. If None, the scores for each class are returned. Otherwise, this determines the type of averaging performed on the data:
+
+'weighted':
+
+Calculate metrics for each label, and find their average weighted by support (the number of true instances for each label). This alters ‘macro’ to account for label imbalance; it can result in an F-score that is not between precision and recall.
+
+* n_jobsint or None, optional (default=None)
+
+The number of jobs to run in parallel for fit. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.
